@@ -1,0 +1,184 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  display: flex;
+  flex-flow: nowrap column;
+}
+
+.header {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  background: url(assets/summerfield-336672.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 50vw;
+}
+.header h1 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: honeydew;
+  font-size: 7vw;
+  font-weight: 900;
+  letter-spacing: 1vw;
+}
+.header p {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: honeydew;
+  font-size: 3vw;
+}
+
+.nav {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+  font-size: 16px;
+}
+.enlaces {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 1 1 auto;
+}
+.enlaces a {
+  text-align: center;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
+.seccion {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+}
+.articulos {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 10 1 auto;
+}
+.articulo {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  margin: 5px;
+}
+.articulo img {
+  background-position: center;
+  background-size: cover;
+  background-attachment: contain;
+  width: 40%;
+}
+
+.descripcion {
+  margin: 5px;
+  font-size: 20px;
+}
+
+.aside {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 3px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.publicidad {
+  margin: 5px;
+  border-radius: 5px;
+  flex-flow: column wrap;
+  flex: 1 1 auto;
+}
+.publicidad img {
+  width: 100%;
+}
+.publicidad p {
+  margin: 1px;
+  font-size: 2.5vw;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  font-size: 16px;
+}
+
+.info {
+  margin: auto;
+  text-align: center;
+  flex: 1 1 auto;
+}
+.redes {
+  text-align: center;
+  flex: 1 1 auto;
+}
+a,
+p,
+h1,
+h3 {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .nav {
+    margin: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    font-size: 3vw;
+  }
+  .seccion {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    margin: 5px;
+  }
+  .articulo {
+    margin: 2px;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .articulo img {
+    background-position: center;
+    background-size: cover;
+    background-attachment: contain;
+    width: 100%;
+  }
+  .descripcion {
+    margin: 5px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
